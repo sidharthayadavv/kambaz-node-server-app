@@ -19,23 +19,18 @@ const allowedOrigins = [
     "http://localhost:3000",
     "http://localhost:3001",
     "https://kambaz-next-js-git-a5-sidhartha-yadavs-projects.vercel.app",
-    /https:\/\/.*\.vercel\.app$/
+    "https://fa25-kambaz-next-js.vercel.app",
 ];
 
 if (process.env.CLIENT_URL) {
     allowedOrigins.push(process.env.CLIENT_URL);
 }
 
-if (process.env.CLIENT_URLS) {
-    const additionalUrls = process.env.CLIENT_URLS.split(',').map(url => url.trim());
-    allowedOrigins.push(...additionalUrls);
-}
-
 app.use(cors({
     credentials: true,
     origin: function (origin, callback) {
-        if (!origin) {
-            return callback(null, true);}
+        if (!origin) return callback(null, true);
+
         if (allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
