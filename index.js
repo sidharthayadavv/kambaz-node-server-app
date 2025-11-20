@@ -18,8 +18,8 @@ const isProduction = process.env.NODE_ENV === 'production';
 const allowedOrigins = [
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://kambaz-next-js-git-a5-sidhartha-yadavs-projects.vercel.app",
-    "https://fa25-kambaz-next-js.vercel.app",
+    // "https://kambaz-next-js-git-a5-sidhartha-yadavs-projects.vercel.app",
+    "https://kambaz-next-js-pi-two.vercel.app",
 ];
 
 if (process.env.CLIENT_URL) {
