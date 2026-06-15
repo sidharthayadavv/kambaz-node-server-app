@@ -5,3 +5,4 @@
 5. testing whole architecture once
 6. I have a strong feeling about this one
 7. It works
+8. post terraform update test
