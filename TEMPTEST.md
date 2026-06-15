@@ -6,3 +6,4 @@
 6. I have a strong feeling about this one
 7. It works
 8. post terraform update test
+9. test after updating s3
